@@ -144,7 +144,7 @@ main .about-me-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* desctiption component */
+  /* description component */
 }
 main .about-me-container .about-image img {
   width: 100%;

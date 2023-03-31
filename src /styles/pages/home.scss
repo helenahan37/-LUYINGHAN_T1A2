@@ -43,7 +43,7 @@ main {
                 flex-direction: row;
                 align-items: center;
                 .btn_me {
-                  /* include mainbutton style */
+                  /* include main button style */
                     .main_button {
                         @include mainbuttion-stuff ();
                     }
