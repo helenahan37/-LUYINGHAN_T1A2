@@ -1,0 +1,195 @@
+@import "../index";
+@import "../defaults/color";
+@import "../defaults/breakpoint";
+
+
+
+main {
+  display: flex;
+  align-items: center;
+  margin: 0 4rem;
+  /* hide small size application design */
+  .service {
+    display: none;
+    a {
+      text-decoration:none;
+
+    }
+    } 
+    .skill-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      img {
+        width: 100%;
+        margin-left: 4rem;
+      } 
+      .skill-animation {
+        margin-right: 4rem;
+        h2 {
+          font-size: 2rem;
+          width: 30rem;
+          span {
+          font-size: 2.5rem;
+          color: $job-color;
+          } 
+            } 
+      /* skill animiation bar component */
+        .skill-list {
+            .bar-item1,.bar-item2,.bar-item3,.bar-item4 {
+              a{
+                text-decoration: none;
+                color: black;
+                &:hover {
+                  color: grey;
+                } 
+              }
+            margin-bottom: 1.5rem;
+            .skill-wrap {
+            height: 2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 0.1rem;
+            } 
+                          
+            .progress1 {
+              width: 0%;
+              height: 8px;
+              border-radius: 5px;
+              background-color: #0ccaf0;
+              animation: progress-bar 2s ease-in-out forwards;
+              } 
+                          
+            @keyframes progress-bar {
+                0% {
+                    width: 0%;
+                  } 
+                100% {
+                    width: 70%;
+                } 
+            } 
+                          
+            .progress2 {
+            border-radius: 5px;
+            width: 0%;
+            height: 8px;
+            background-color: $job-color;
+            animation: progress-bar2 2s ease-in-out forwards;
+            } 
+                     
+            @keyframes progress-bar2 {
+            0% {
+            width: 0%;
+            } 
+            100% {
+              width: 92%;
+            } 
+            } 
+
+            .progress3 {
+            width: 0%;
+            height: 8px;
+            border-radius: 5px;
+            background-color: $link-color;
+            animation: progress-bar3 2s ease-in-out forwards;
+            } 
+        
+            @keyframes progress-bar3 {
+            0% {
+              width: 0%;
+            } 
+            100% {
+              width: 85%;
+            } 
+            } 
+            .progress4 {
+            width: 0%;
+            height: 8px;
+            border-radius: 5px;
+            background-color: green;
+            animation: progress-bar4 2s ease-in-out forwards;
+            } 
+
+            @keyframes progress-bar4 {
+              0% {
+                width: 0%;
+              } 
+              100% {
+                width: 65%;
+              } 
+            } 
+          } 
+        } 
+      } 
+    } 
+} 
+
+ 
+
+/* change the layout in medieum size to column */
+@media screen and (max-width: $medium) {
+  main {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    .skill-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 100%;
+      img {
+        margin-top: 2rem;
+        margin-left: 0;
+      } 
+        .skill-animation {
+          width: 70%;
+          margin-right: 0;
+          .skill-wrap {
+            font-size: 1.5rem;
+          } 
+
+        } 
+
+    } 
+    
+  } 
+}
+
+
+
+
+@media screen and (max-width: $small) {
+/* hide the skills animation content */
+  main {
+    margin: 1rem auto;
+  .skill-container {
+    display: none;} 
+
+/* service content component */
+  .service {
+    margin-top: 0;
+    display: flex;
+    visibility: visible;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    h2 {
+      font-size: 5vw;
+    } 
+    h3 {
+      font-size: 4vw;
+      color: $link-color;
+    } 
+    p{
+      font-size: 4vw;
+    } 
+    
+  } 
+  } 
+}
+
+  

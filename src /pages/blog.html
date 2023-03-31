@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helena | Blog</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+    <!-- STYLES -->
+
+    <link rel="stylesheet" href="../styles/pages/blog.css">
+    <script src="../styles/index.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+
+    
+</head>
+<body>
+    <header>   
+        <div class="logo"><a href="../index.html"><img src="../images/logo.png" alt="logo"></a></div> 
+        <div class="nav-wrap">  
+             <ul class="nav" id="nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/about.html">About</a></li>
+                    <li><a href="../pages/skills.html">Skills</a></li>
+                    <li><a href="../pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="../pages/blog.html">Blog</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="icon">
+            <div onclick="toggleMenu()">
+                <span>☰</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- blogcards components -->
+      <div class="blog-grid">
+                <article class="blog">
+                    <!-- blog posts link -->
+                    <a href="../pages/blog/blog1.html" class="btn" target="_blank">
+                        <img src="../images/blog1.jpg" alt="animation">
+                    </a>
+                    <div class="blog-content">
+                        <!-- blog title and date -->
+                        <h2 class="blog-title">Animating link underline</h2>
+                         <p class="blog-date">02 February 2022</p>
+                    </div>
+                </article>
+                <article class="blog">
+                    <a href="../pages/blog/blog2.html" class="btn" target="_blank">
+                        <img src="../images/blog2.jpg" alt="flexbox-grid">
+                    </a>    
+                    <div class="blog-content">
+                        <h2 class="blog-title">A complete Grid to Flexbox</h2>
+                         <p class="blog-date">07 Mar 2022</p>   
+                    </div>
+                </article>
+                <article class="blog">
+                    <a href="../pages/blog/blog3.html" class="btn" target="_blank">
+                        <img src="../images/blog3.jpg" alt="hardwork">
+                    </a>
+                    <div class="blog-content">
+                        <h2 class="blog-title">Appreciate for your hard work</h2>
+                         <p class="blog-date">13 May 2022</p>
+                    </div>
+                </article>
+                <article class="blog">
+                    <a href="../pages/blog/blog4.html" class="btn" target="_blank">
+                        <img src="../images/blog4.jpg" alt="burnout">
+                    </a>
+                    <div class="blog-content">
+                        <h2 class="blog-title">Watch out for burnout sympotoms</h2>
+                         <p class="blog-date">01 June 2022</p>
+                    </div>
+                </article>
+                <article class="blog">
+                    <a href="../pages/blog/blog5.html" class="btn" target="_blank">
+                        <img src="../images/blog5.jpg" alt="cheatsheet">
+                    </a>
+                    <div class="blog-content">
+                        <h2 class="blog-title">The ultimate HTML Cheat Sheet</h2>
+                         <p class="blog-date">20 September 2022</p>
+                    </div>
+                </article>
+            </div> 
+    </main>
+
+    <footer>
+    <div class="copyright">
+        <p>Copyright © 2023 Helena Rundid Co. All rights reserved</p> 
+    </div>
+    </footer>
+</body>
+</html>

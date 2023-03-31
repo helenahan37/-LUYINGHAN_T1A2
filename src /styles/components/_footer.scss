@@ -1,0 +1,21 @@
+@import "../defaults/color";
+/* footer with copyright component */
+footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0 !important;
+    bottom: 0px;
+    .copyright{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em ;
+    background-color: $footer-color;
+}
+    
+}
+
+@media screen and (max-width: 600px) {
+    .copyright {
+        font-size: 3vw !important;
+        }
+}

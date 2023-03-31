@@ -1,0 +1,165 @@
+@import "../components/utils";
+@import "../defaults/color";
+@import "../index";
+@import "../defaults/breakpoint";
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+   /* setting background color */
+  background: linear-gradient(to right, #f8f3eb 50%, rgb(241, 239, 254) 50%);
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    padding: 24px;
+    .contact-wrapper {
+      margin-bottom: 5px;
+      img {
+        width: 400px;
+        border-radius: 5%;
+      }
+    }
+   /* contact information component */
+    .contact-info{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 1rem 0;
+    
+      a {
+        text-decoration: none;
+        // color: $link-color;
+        color: $link-color;
+        font-size: 1.5rem;
+        &:hover {
+          color: gray;
+        }
+     
+      }
+      .email-wrapper {
+        display: flex;
+        align-items: center;
+      }
+      .phone-wrapper {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+ /* submit form component */
+  .submit-wrapper {
+    padding: 24px;
+    h3 {
+      font-size: 2rem;
+    }
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    .form-element {
+      .form-input {
+        border: 2px solid black;
+        width: 100%;
+        outline: none;
+        margin-bottom: 12px;
+        &:not(.form-textarea) {
+          height: 36px;
+        }
+        &.form-textarea {
+          resize: none;
+        }
+      }
+    }
+    /* submit button */
+    .submit-button {
+      height: 40px;
+      #submit {
+        background-color: bisque;
+        border-radius: 4px;
+        font-size: 1.3rem;
+        &:hover {
+          cursor: pointer;
+          background-color:#b685c2;
+          color: whitesmoke;
+        }
+      }
+    }
+  }
+}
+
+/* change the medium size layout to vertical */
+@media screen and (max-width: $medium) {
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    background: linear-gradient(to top, #f8f3eb 50%, rgb(241, 239, 254) 50%);
+  }
+}
+
+@media screen and (max-width: $small) {
+  main {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+/* change layout and replace background image */
+    .info-container {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      background-image: url('../../images/contactme.png');
+      background-size:contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 0 !important;
+      width: 100%;
+      .contact-wrapper {
+        text-align: center;
+        h1 {
+          font-size: 2rem;
+          margin: 0.5rem 0 0 0;
+        }
+        h2 {
+          font-size: 1rem;
+          margin-top: 0;
+        }
+   
+ /* hide the contact picture and center the contact content */
+        img {
+          display: none !important;
+        }
+      }
+    }
+    .contact-info {
+      align-items: center;
+      background-color: #f8f3eb;
+      a {
+        font-size: 5vw !important;
+      }
+    }
+  }
+  .submit-wrapper {
+    padding: 0 !important;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    .form-input {
+      width: 70vw !important;
+    }
+    h3 {
+      font-size: 6vw !important;
+    }
+    .submit-button #submit {
+      width: 7rem !important;
+      height: 40px !important;
+      font-size: 1.5rem !important;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helena | Contact</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+    <!-- STYLES -->
+
+    <link rel="stylesheet" href="../styles/pages/contact.css">
+    <script src="../styles/index.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+
+    
+</head>
+<body>
+    <header>   
+        <div class="logo"><a href="../index.html"><img src="../images/logo.png" alt="logo"></a></div> 
+        <div class="nav-wrap">  
+             <ul class="nav" id="nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/about.html">About</a></li>
+                    <li><a href="../pages/skills.html">Skills</a></li>
+                    <li><a href="../pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="../pages/blog.html">Blog</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="icon">
+            <div onclick="toggleMenu()">
+                <span>☰</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- contact information component -->
+        <div class="info-container">
+            <div class="contact-wrapper">
+                <h1>Let's Chat</h1>
+                <h2>Tell me about your project</h2>
+                <img src="../images/contact-me.png" alt="contact-me">
+            </div>
+            <div class="contact-info">
+                <div class="email-wrapper">
+                  <a href="mailto:hlyhelena37@gmail.com">
+                    <i class="fa-regular fa-envelope"></i>
+                    webdeveloper@gmail.com
+                  </a>
+                </div>
+                <div class="phone-wrapper">
+                  <a href="tel:0452000000">
+                    <i class="fa-solid fa-phone"></i>
+                    0452000000
+                  </a>
+                </div>
+              </div>
+        </div>
+        <!-- submit form component -->
+        <!-- text form submit area and submit button wrapper -->
+        <form class="submit-wrapper">
+            <h3>Send me a message 🚀</h3>
+            <div class="form-element">
+                <div>
+                    <input class="form-input" placeholder="Full Name">
+                </div>
+                <div>
+                    <input class="form-input" placeholder="Email">
+                </div>
+                <div>
+                    <input class="form-input" placeholder="Subject">
+                </div>
+                <div>
+                    <textarea rows="8" class="form-input form-textarea" placeholder="Message"></textarea>
+                </div>   
+            </div>
+            <div class="submit-button">
+                <button id="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+    <div class="copyright">
+        <p>Copyright © 2023 Helena Rundid Co. All rights reserved</p> 
+    </div>
+    </footer>
+</body>
+</html>

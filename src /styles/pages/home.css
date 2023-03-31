@@ -1,0 +1,277 @@
+/* button component */
+/* blog sidebar component*/
+/* small size application breakpoints */
+/* medium size application breakpoints */
+/* medium-large application breakpoints-blog use only */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  width: 100%;
+}
+
+/* website logo component*/
+div.logo img {
+  display: block;
+  margin: 1em;
+  height: 3em;
+}
+div.logo img:hover {
+  transform: scale(1.2);
+}
+
+/* navigation bar component */
+div.nav-wrap {
+  flex-grow: 1;
+}
+div.nav-wrap .nav {
+  margin-right: 4rem;
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  padding: 0;
+}
+div.nav-wrap .nav a {
+  text-decoration: none;
+  color: #6f35b1;
+  margin: 0px 25px;
+}
+div.nav-wrap .nav a:hover {
+  color: black;
+}
+
+/* hamburger navigation menu component*/
+header div.icon {
+  display: none;
+  padding: 0.2em;
+  width: 2em;
+  height: 1.5em;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-size: 2em;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    background-color: #bde2e2;
+    width: 100%;
+  }
+  header div.logo img {
+    margin: 0.5em;
+    height: 3em;
+  }
+  header div.icon {
+    display: block;
+  }
+  /*  hamburger navigation list */
+  header div.nav-wrap {
+    height: 2em;
+  }
+  header div.nav-wrap ul.nav {
+    display: none;
+    background-color: #bde2e2;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 2.3em;
+    left: 0em;
+    right: 0em;
+    margin-right: none;
+  }
+  header div.nav-wrap ul.nav li {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  header div.nav-wrap ul.nav li a {
+    margin: 0;
+  }
+  header div.nav-wrap ul.nav.show {
+    display: flex;
+    margin-right: 0 !important;
+    z-index: 1;
+  }
+}
+/* footer with copyright component */
+footer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0 !important;
+  bottom: 0px;
+}
+footer .copyright {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  background-color: azure;
+}
+
+@media screen and (max-width: 600px) {
+  .copyright {
+    font-size: 3vw !important;
+  }
+}
+html body {
+  margin: 0;
+  font-family: "Tilt Neon", cursive;
+  background-color: #f0f5f9;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  flex-grow: 2;
+}
+
+/* small size application breakpoints */
+/* medium size application breakpoints */
+/* medium-large application breakpoints-blog use only */
+main {
+  margin: 4rem;
+  display: flex;
+  justify-content: center;
+  /* introduction component */
+}
+main .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+main .container img {
+  width: 100%;
+}
+main .container .details {
+  padding-left: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* about me button component*/
+}
+main .container .details .hello .hitext {
+  font-size: 2.5em;
+}
+main .container .details .hello .name {
+  font-size: 4em;
+}
+main .container .details .hello .job {
+  font-size: 3em;
+}
+main .container .details .hello .job .job-name {
+  margin: 1.2rem 0;
+}
+main .container .details .hello .job .lightyellow {
+  color: #ffd603;
+}
+main .container .details .button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* social accounts list component*/
+}
+main .container .details .button .btn_me {
+  /* include mainbutton style */
+}
+main .container .details .button .btn_me .main_button {
+  background-color: rgb(12, 202, 240);
+  font-weight: 500px;
+  border-radius: 60px;
+  border: 2px solid black;
+  overflow: hidden;
+  width: 120px;
+  font-size: 20px;
+  height: 40px;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  color: black;
+}
+main .container .details .button .btn_me .main_button:hover {
+  background-color: #198754;
+  color: #f0f5f9;
+}
+main .container .details .button .social {
+  flex-grow: 1;
+}
+main .container .details .button .social ul {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  list-style: none;
+  font-size: 2.5rem;
+  padding: 0;
+}
+main .container .details .button .social ul a {
+  text-decoration: none;
+  color: #00a3d4;
+  margin-left: 25px;
+}
+main .container .details .button .social ul a:hover {
+  color: grey;
+}
+
+@media screen and (max-width: 1200px) {
+  /*  change layout to vertical  */
+  main .container {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  main .container .details {
+    padding-left: 0;
+    align-items: center;
+  }
+  main .container .details .hello .hitext {
+    font-size: 2rem;
+  }
+  main .container .details .hello .name {
+    font-size: 3rem;
+  }
+  main .container .details .hello .job {
+    font-size: 2.5rem;
+  }
+  main .container .details .hello .job p.job-name {
+    margin: 1rem 0;
+  }
+  main .container .mainpicture img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  main {
+    box-sizing: border-box;
+    margin: 1rem;
+  }
+  main .container .details {
+    margin: 0;
+  }
+  main .container .details .hello .hitext {
+    font-size: 1.5rem;
+  }
+  main .container .details .hello .name {
+    font-size: 2.5rem;
+  }
+  main .container .details .hello .job {
+    font-size: 2rem;
+  }
+  main .container .button {
+    flex-direction: column-reverse !important;
+  }
+  main .container .button .main_button {
+    font-size: 1rem !important;
+  }
+  main .container .button .social ul {
+    gap: 30px !important;
+    margin: 1rem 0 !important;
+  }
+  main .container .button .social ul a {
+    margin-left: 0 !important;
+  }
+}/*# sourceMappingURL=home.css.map */

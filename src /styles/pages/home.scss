@@ -1,0 +1,160 @@
+@import "../components/utils";
+@import "../index";
+@import "../defaults/breakpoint";
+
+main {
+    margin: 4rem;
+    display: flex;
+    justify-content: center;
+    /* introduction component */
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        img {
+            width: 100%;
+        }
+        .details {
+            padding-left: 4em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .hello {
+                .hitext {
+                    font-size: 2.5em;
+                }
+                .name {
+                    font-size: 4em;
+                }
+                .job {
+                    .job-name {
+                    margin: 1.2rem 0;
+                    }
+                    font-size: 3em;
+                    .lightyellow{
+                    color: $job-color; 
+                        }   
+                    }
+                }
+             /* about me button component*/
+            .button {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .btn_me {
+                  /* include mainbutton style */
+                    .main_button {
+                        @include mainbuttion-stuff ();
+                    }
+   
+                     }
+                    /* social accounts list component*/
+                .social { 
+                    flex-grow: 1;
+                    ul {
+                        display: flex;
+                        justify-content: flex-start;
+                        gap: 10px;
+                        list-style: none;
+                        font-size: 2.5rem;
+                        padding: 0;
+                        a {
+                            text-decoration: none;
+                            color: #00a3d4;
+                            margin-left: 25px;
+                            &:hover {
+                            color: grey;
+                            }
+                        }
+                    }
+                }
+            }
+           
+        }
+    }
+}
+
+
+@media screen and (max-width: $medium) {
+    /*  change layout to vertical  */
+    main {
+        .container {
+            margin-bottom: 3rem;
+            display: flex;
+            flex-direction: column-reverse;
+            text-align: center;    
+            .details {
+                padding-left: 0;
+                align-items: center;
+                .hello {
+                    .hitext {
+                        font-size: 2rem;
+                    }
+                    .name {
+                        font-size: 3rem;
+                    }
+                    .job {
+                        font-size: 2.5rem;
+                        p.job-name {
+                            margin: 1rem 0;
+                        }
+                        }
+                    }
+                         } 
+            
+            .mainpicture {
+                img {
+                width: 100%;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width: $small) {
+        main {
+            box-sizing: border-box;
+            margin:1rem;
+            .container {      
+                
+                .details {
+                    margin: 0;
+                    .hello {
+                        .hitext {
+                            font-size: 1.5rem;
+                        }
+                        .name {
+                            font-size: 2.5rem;
+                        }
+                        .job {
+                            font-size: 2rem;
+                            }
+                        }
+                } 
+                .button {
+                    flex-direction: column-reverse !important;
+                    .main_button {
+                        font-size: 1rem!important;
+                      }
+
+                    .social {
+                    ul {
+                    gap: 30px !important;
+                     margin:1rem 0 !important;
+                    a {
+                    margin-left: 0 !important;
+                        }
+                    }
+                }
+                
+            }
+        }     
+     }
+}
+    
+    
+    
+

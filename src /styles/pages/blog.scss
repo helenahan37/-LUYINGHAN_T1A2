@@ -1,0 +1,119 @@
+@import "../components/utils";
+@import "../defaults/color";
+@import "../index";
+@import "../defaults/breakpoint";
+
+
+main {
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+.blog-grid {
+    width: 100%;
+    display: grid;
+    grid-gap:20px;
+/* define the column width in grid layout*/ 
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+    .blog {
+/* styling blog posts background */ 
+        background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+        transition: 1s;
+
+
+        /* hover effects */
+        &:hover {
+        transform: scale(1.1);
+        }
+        padding: 14px;
+        /* adjust card size */
+        aspect-ratio: 1/1.2;
+        .blog-content {       
+            max-width: 100%;
+            background-color: whitesmoke;
+            align-self: end;
+            padding: 0.5rem;
+         
+            .blog-title {
+                font-size: 1rem;
+    
+            }
+           
+        }
+        img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+        }
+    }
+}
+}
+
+  
+
+@media screen and (max-width: $medium) {
+
+    main{
+        .blog-grid {
+            /* change the position of blog posts */
+            gap: 3rem 0;
+            display: grid;
+            grid-template-rows: repeat(2,1fr);
+            grid-template-columns: repeat(11, 1fr);
+            .blog {
+                width: 100%;
+             &:nth-child(1) {
+                grid-area: 1/1/1/4;
+                justify-self: center;
+            }
+            &:nth-child(2) {
+                grid-area: 1/5/1/8;
+                justify-self: center;
+            }
+            &:nth-child(3) {
+                grid-area: 1/9/1/12;
+                justify-self: center;
+            }
+            &:nth-child(4) {
+                grid-area: 2/3/3/6;
+                justify-self: center;
+            }
+            &:nth-child(5) {
+                grid-area: 2/7/3/10;
+                justify-self: center;
+            }
+            img {
+                width: 100%;
+            }
+           
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width: $small) {
+    main {
+        /* change the layout to vertical */
+            display: flex;        
+            margin: 0 2rem !important;    
+           .blog-grid {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;  
+            padding: 20px;
+            .blog { 
+                /* cancel transform effects on small screen size */
+                aspect-ratio:1/1.3;
+                transition: none !important;
+                    &:hover {
+               transform: none !important;
+                                }
+                    }
+        }
+    }
+
+}     

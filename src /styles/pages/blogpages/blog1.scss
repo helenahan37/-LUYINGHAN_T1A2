@@ -1,0 +1,78 @@
+@import "../../components/utils";
+@import "../../defaults/color";
+@import "../../index";
+@import "../../defaults/breakpoint";
+
+       
+.blog-wrapper {
+    /* blog posts card */
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows:auto;
+    gap: 8rem;
+    margin: 0 2rem 0 4rem;
+    #content {
+        max-width: 100%;
+      p {
+     line-height: 1.8;
+     text-align: justify;
+        }
+    img {
+        width: 30%;
+        }
+        .floating-left {
+            float:left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .floating-right {
+            float: right;
+            margin-left: 10px;
+            margin-bottom: 10px;
+
+        }
+    }
+    /* blog sidebar component*/
+    #sidebar { 
+        flex: 1 0 300px;
+        margin-bottom: 1rem;
+       
+        .sidebar-content {
+            transition: 1s;
+            &:hover {
+                cursor: pointer
+                transform; scale: (1.03);
+            }
+            margin: 10px;
+            padding: 10px;
+            background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+            .blog-header {
+                @include sidebar-stuff ();
+            }
+            .blog-snippet {            
+                a {
+                    background-color: gray;
+                    color: #e6e9f0;
+                    padding: 5px 10px;
+                }
+                
+            }
+        }
+    }
+    
+}
+
+/* change the sidebar to bottom in samll size application */
+@media screen and (max-width: $medium-large) {
+    .blog-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 0;
+    margin: 1rem 2rem;
+    }
+    #sidebar {
+    order: 2;
+    }
+    }
+

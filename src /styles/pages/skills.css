@@ -1,0 +1,299 @@
+/* small size application breakpoints */
+/* medium size application breakpoints */
+/* medium-large application breakpoints-blog use only */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  width: 100%;
+}
+
+/* website logo component*/
+div.logo img {
+  display: block;
+  margin: 1em;
+  height: 3em;
+}
+div.logo img:hover {
+  transform: scale(1.2);
+}
+
+/* navigation bar component */
+div.nav-wrap {
+  flex-grow: 1;
+}
+div.nav-wrap .nav {
+  margin-right: 4rem;
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  padding: 0;
+}
+div.nav-wrap .nav a {
+  text-decoration: none;
+  color: #6f35b1;
+  margin: 0px 25px;
+}
+div.nav-wrap .nav a:hover {
+  color: black;
+}
+
+/* hamburger navigation menu component*/
+header div.icon {
+  display: none;
+  padding: 0.2em;
+  width: 2em;
+  height: 1.5em;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-size: 2em;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    background-color: #bde2e2;
+    width: 100%;
+  }
+  header div.logo img {
+    margin: 0.5em;
+    height: 3em;
+  }
+  header div.icon {
+    display: block;
+  }
+  /*  hamburger navigation list */
+  header div.nav-wrap {
+    height: 2em;
+  }
+  header div.nav-wrap ul.nav {
+    display: none;
+    background-color: #bde2e2;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 2.3em;
+    left: 0em;
+    right: 0em;
+    margin-right: none;
+  }
+  header div.nav-wrap ul.nav li {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  header div.nav-wrap ul.nav li a {
+    margin: 0;
+  }
+  header div.nav-wrap ul.nav.show {
+    display: flex;
+    margin-right: 0 !important;
+    z-index: 1;
+  }
+}
+/* footer with copyright component */
+footer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0 !important;
+  bottom: 0px;
+}
+footer .copyright {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  background-color: azure;
+}
+
+@media screen and (max-width: 600px) {
+  .copyright {
+    font-size: 3vw !important;
+  }
+}
+html body {
+  margin: 0;
+  font-family: "Tilt Neon", cursive;
+  background-color: #f0f5f9;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  flex-grow: 2;
+}
+
+/* small size application breakpoints */
+/* medium size application breakpoints */
+/* medium-large application breakpoints-blog use only */
+main {
+  display: flex;
+  align-items: center;
+  margin: 0 4rem;
+  /* hide small size application design */
+}
+main .service {
+  display: none;
+}
+main .service a {
+  text-decoration: none;
+}
+main .skill-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .skill-container img {
+  width: 100%;
+  margin-left: 4rem;
+}
+main .skill-container .skill-animation {
+  margin-right: 4rem;
+  /* skill animiation bar component */
+}
+main .skill-container .skill-animation h2 {
+  font-size: 2rem;
+  width: 30rem;
+}
+main .skill-container .skill-animation h2 span {
+  font-size: 2.5rem;
+  color: #ffd603;
+}
+main .skill-container .skill-animation .skill-list .bar-item1, main .skill-container .skill-animation .skill-list .bar-item2, main .skill-container .skill-animation .skill-list .bar-item3, main .skill-container .skill-animation .skill-list .bar-item4 {
+  margin-bottom: 1.5rem;
+}
+main .skill-container .skill-animation .skill-list .bar-item1 a, main .skill-container .skill-animation .skill-list .bar-item2 a, main .skill-container .skill-animation .skill-list .bar-item3 a, main .skill-container .skill-animation .skill-list .bar-item4 a {
+  text-decoration: none;
+  color: black;
+}
+main .skill-container .skill-animation .skill-list .bar-item1 a:hover, main .skill-container .skill-animation .skill-list .bar-item2 a:hover, main .skill-container .skill-animation .skill-list .bar-item3 a:hover, main .skill-container .skill-animation .skill-list .bar-item4 a:hover {
+  color: grey;
+}
+main .skill-container .skill-animation .skill-list .bar-item1 .skill-wrap, main .skill-container .skill-animation .skill-list .bar-item2 .skill-wrap, main .skill-container .skill-animation .skill-list .bar-item3 .skill-wrap, main .skill-container .skill-animation .skill-list .bar-item4 .skill-wrap {
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0.1rem;
+}
+main .skill-container .skill-animation .skill-list .bar-item1 .progress1, main .skill-container .skill-animation .skill-list .bar-item2 .progress1, main .skill-container .skill-animation .skill-list .bar-item3 .progress1, main .skill-container .skill-animation .skill-list .bar-item4 .progress1 {
+  width: 0%;
+  height: 8px;
+  border-radius: 5px;
+  background-color: #0ccaf0;
+  animation: progress-bar 2s ease-in-out forwards;
+}
+@keyframes progress-bar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+main .skill-container .skill-animation .skill-list .bar-item1 .progress2, main .skill-container .skill-animation .skill-list .bar-item2 .progress2, main .skill-container .skill-animation .skill-list .bar-item3 .progress2, main .skill-container .skill-animation .skill-list .bar-item4 .progress2 {
+  border-radius: 5px;
+  width: 0%;
+  height: 8px;
+  background-color: #ffd603;
+  animation: progress-bar2 2s ease-in-out forwards;
+}
+@keyframes progress-bar2 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 92%;
+  }
+}
+main .skill-container .skill-animation .skill-list .bar-item1 .progress3, main .skill-container .skill-animation .skill-list .bar-item2 .progress3, main .skill-container .skill-animation .skill-list .bar-item3 .progress3, main .skill-container .skill-animation .skill-list .bar-item4 .progress3 {
+  width: 0%;
+  height: 8px;
+  border-radius: 5px;
+  background-color: #6f35b1;
+  animation: progress-bar3 2s ease-in-out forwards;
+}
+@keyframes progress-bar3 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+main .skill-container .skill-animation .skill-list .bar-item1 .progress4, main .skill-container .skill-animation .skill-list .bar-item2 .progress4, main .skill-container .skill-animation .skill-list .bar-item3 .progress4, main .skill-container .skill-animation .skill-list .bar-item4 .progress4 {
+  width: 0%;
+  height: 8px;
+  border-radius: 5px;
+  background-color: green;
+  animation: progress-bar4 2s ease-in-out forwards;
+}
+@keyframes progress-bar4 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+/* change the layout in medieum size to column */
+@media screen and (max-width: 1200px) {
+  main {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  main .skill-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  main .skill-container img {
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+  main .skill-container .skill-animation {
+    width: 70%;
+    margin-right: 0;
+  }
+  main .skill-container .skill-animation .skill-wrap {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* hide the skills animation content */
+  main {
+    margin: 1rem auto;
+    /* service content component */
+  }
+  main .skill-container {
+    display: none;
+  }
+  main .service {
+    margin-top: 0;
+    display: flex;
+    visibility: visible;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  main .service h2 {
+    font-size: 5vw;
+  }
+  main .service h3 {
+    font-size: 4vw;
+    color: #6f35b1;
+  }
+  main .service p {
+    font-size: 4vw;
+  }
+}/*# sourceMappingURL=skills.css.map */
