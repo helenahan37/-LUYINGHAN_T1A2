@@ -5,10 +5,25 @@ This is a portfolio website for displaying my knowledge and skills as a develope
 ***
 Published portfolio website-[https://642590d5b99e580008151349--helenarundid.netlify.app/]
 <br>
-GitHub repo-[https://github.com/helenahan37/LUYINGHAN_T1A2]
+GitHub repo-[https://github.com/helenahan37/LUYINGHAN_T1A2] <br>
+Prensentation link- [https://www.youtube.com/watch?v=64qXBz_3hxQ]
 
 ### Purpose
 The purpose of this website is to showcase my skills, work experience, and personal projects to potential clients, employers, or collaborators. It is a platform for me to establish my personal brand and online presences, which also could help me share my knowledge, insights and ideas with a wider audience through blog posts or other forms of content. 
+***
+
+### Target Audience
+The target audience for this website may vary, including potential employers seeking a developer, individuals and businesses in need of technical support or custom software solutions. Small business owners looking to establish their online presence with a website or blog, or those requiring an e-commerce platform could also be potential clients. Additionally, individuals or companies with mobile app ideas may seek a personal developer's services as well.
+
+***
+ ### Tech stack
+
+ - html
+ - CSS
+ - Scss
+ - JavaScript
+ - GitHub
+ - Netlify
 ***
 ### Functionality / Features
 
@@ -186,7 +201,8 @@ The contact page provides my detailed contact information and a submit form for 
 ![Alt Text](./docs/homepage%20screenshot.png)
 Desktop Size:
 
-Aligning images and text horizontally- it creates a clear and easy-to-follow visual hierarchy. By placing the image and text side by side, it allows the reader to quickly and intuitively understand the relationship between the two elements. This layout is also more visually appealing and can make the content appear more organized and professional. This layout can create a balanced and visually appealing design, while also being user-friendly and easy to navigate.
+Aligning images and text horizontally
+- it creates a clear and easy-to-follow visual hierarchy. By placing the image and text side by side, it allows the reader to quickly and intuitively understand the relationship between the two elements. This layout is also more visually appealing and can make the content appear more organized and professional. This layout can create a balanced and visually appealing design, while also being user-friendly and easy to navigate.
 
 Compactly arranging all buttons
 - it saves page space and makes the page more tidy and easy to navigate, creating a clean, uncluttered layout
@@ -213,17 +229,18 @@ Placing the "About Me" button on the bottom of the page and clearly separate it 
 
 Desktop size:
 
-Keeping layout consistent with the homepage, put the image on one side and put other texts on another side- it enhances the overall user experience and helps visitors to navigate the website more easily. When the layout is consistent, users can quickly find the information they are looking for, without having to re-learn how to navigate the website on each page.
+Keeping layout consistent with the homepage, put the image on one side and put other texts on another side
+- it enhances the overall user experience and helps visitors to navigate the website more easily. When the layout is consistent, users can quickly find the information they are looking for, without having to re-learn how to navigate the website on each page.
 
-Table size:
+Tablet size:
 
 Keeping layout consistent with homepage, centering images and texts content vertically.
 
 Phone size:
 
 - Using CSS grid to help me rearrange the text content’s position, make it overlap with my main image.  
-- Adding a white background to the text section- it can create contrast between the background color and the text color which can make the information more prominent, making it easier for readers to remember and understand the key information
-
+- Adding a white background to the text section
+  - it can create contrast between the background color and the text color which can make the information more prominent.
 #### Skills Page
 ![Alt Text](./docs/skillspage%20screenshot.png)
 
@@ -231,7 +248,7 @@ Desktop Size:
 
 Using colorful animated progress bar to showcase my skills and services that I have provided.
    - Progress bars are visually appealing and can grab the attention of users, making it easier for them to navigate through my website or portfolio.
-   - And it can provide a quick and easy way for viewers to understand my skills level which can help impress potential clients or employers.
+   - it can provide a quick and easy way for viewers to understand my skills level which can help impress potential clients or employers.
 
 Table Size:
 
@@ -320,18 +337,6 @@ Replacing a regular image with a background image
 
 ***
 
-### Target Audience
-The target audience for this website may vary, including potential employers seeking a developer, individuals and businesses in need of technical support or custom software solutions. Small business owners looking to establish their online presence with a website or blog, or those requiring an e-commerce platform could also be potential clients. Additionally, individuals or companies with mobile app ideas may seek a personal developer's services as well.
-
-***
- ### Tech stack
-
- - html
- - CSS
- - Scss
- - JavaScript
- - GitHub
- - Netlify
 
 
 
