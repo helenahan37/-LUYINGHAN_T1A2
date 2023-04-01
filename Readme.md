@@ -39,7 +39,7 @@ The overall color scheme for the website was chosen as pastel macaron color pale
 
 #### Here are some components that this website is using:
 ---
-####Text Components list:
+#### Text Components list:
 ##### Website title:
 - Enables users quickly understand the content of the page and improve search engine ranking
 - Using "I" to help me separate my name and page name
