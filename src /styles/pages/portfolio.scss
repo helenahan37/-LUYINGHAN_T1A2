@@ -136,8 +136,8 @@ main {
 }
 
 }
-
-@media screen and (max-width: $small) {
+/* adjust fontsize
+ */@media screen and (max-width: $small) {
         .word-container {
             h2 {
             font-size: 5vw !important;
