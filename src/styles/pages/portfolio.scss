@@ -103,7 +103,7 @@ main {
                     border-radius: 5px !important;
                 }
                 span{
-                     /* make link icon visiable in medium size  */
+                     /* make link icon visible in medium size  */
                     visibility: visible;
                     position: absolute;
                     left: 1rem;
@@ -111,7 +111,7 @@ main {
                     background-color:f0f5f9;
                     font-size: 2rem; 
                     border-radius: 5px !important;
-                     /* use pseudo-elments add the projects name on each portfolio cards. */
+                     /* use pseudo-elements add the projects name on each portfolio cards. */
                     &.content1::before {
                         content: "Project1";
                     }
@@ -136,8 +136,8 @@ main {
 }
 
 }
-/* adjust fontsize
- */@media screen and (max-width: $small) {
+/* adjust font size for smaller size screen*/
+@media screen and (max-width: $small) {
         .word-container {
             h2 {
             font-size: 5vw !important;

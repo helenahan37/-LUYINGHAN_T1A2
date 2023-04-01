@@ -6,7 +6,7 @@ This is a portfolio website for displaying my knowledge and skills as a develope
 Published portfolio website-[https://6427d168f88833533763ce22--helenarundidportfolio.netlify.app/]
 <br>
 GitHub repo-[https://github.com/helenahan37/LUYINGHAN_T1A2] <br>
-Prensentation link- [https://www.youtube.com/watch?v=U0_pQY4pXsg]
+Presentation - [https://www.youtube.com/watch?v=U0_pQY4pXsg]
 
 ### Purpose
 The purpose of this website is to showcase my skills, work experience, and personal projects to potential clients, employers, or collaborators. It is a platform for me to establish my personal brand and online presences, which also could help me share my knowledge, insights and ideas with a wider audience through blog posts or other forms of content. 
