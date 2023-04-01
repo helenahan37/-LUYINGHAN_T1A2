@@ -3,7 +3,7 @@
 ## Overview
 This is a portfolio website for displaying my knowledge and skills as a developer and IT professional. 
 ***
-Published portfolio website-[https://642590d5b99e580008151349--helenarundid.netlify.app/]
+Published portfolio website-[https://6427d168f88833533763ce22--helenarundidportfolio.netlify.app/]
 <br>
 GitHub repo-[https://github.com/helenahan37/LUYINGHAN_T1A2] <br>
 Prensentation link- [https://www.youtube.com/watch?v=U0_pQY4pXsg]
