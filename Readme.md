@@ -8,8 +8,7 @@ This is a portfolio website for displaying my knowledge and skills as a develope
 
 Published portfolio website-[https://helenahanportfolio.netlify.app/]
 <br>
-GitHub repo-[https://github.com/helenahan37/LUYINGHAN_T1A2] <br>
-Presentation - [https://www.youtube.com/watch?v=U0_pQY4pXsg]
+
 
 ### Purpose
 
